@@ -38,3 +38,5 @@ def remove_pet_by_name(pet_shop, name):
             name_removed = pet_shop["pets"].index(pet)
     pet_shop["pets"].pop(name_removed)
 
+def add_pet_to_stock (add_stock, pet):
+    add_stock["pets"].append(pet)
