@@ -31,3 +31,10 @@ def find_pet_by_name(pet_shop, name):
             return pet
     return None
 
+def remove_pet_by_name(pet_shop, name):
+    name_removed =[]
+    for pet in pet_shop["pets"]:
+        if pet["name"] == name:
+            name_removed = pet_shop["pets"].index(pet)
+    pet_shop["pets"].pop(name_removed)
+
